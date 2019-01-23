@@ -9,6 +9,9 @@ export default class Helloworld extends cc.Component {
     @property
     text: string = 'hello';
 
+    @property(cc.Node)
+    something: cc.Node = null;
+
     start () {
         // init logic
         this.label.string = this.text;
